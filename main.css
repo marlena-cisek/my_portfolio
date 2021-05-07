@@ -1,0 +1,261 @@
+body{
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+.main {
+    background: url(jpg/12913.jpg) no-repeat center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    min-height: 720px;
+    display: table;
+    position: relative;
+    text-align: center;
+    /* filter: grayscale(70%); */
+}
+
+.intro_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    position: relative;
+    height: 100vh;
+    bottom: 45px;
+}
+.intro_hello {
+    /* color: rgba(223, 17, 96, 0.842); */
+    font-weight: bolder;
+    font-size: 20px ;
+}
+
+
+.intro_username{
+    font-size: 60px;
+    color: rgba(223, 17, 96, 0.842);
+    margin: 15px 0;
+    font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+    .intro_username {
+        font-size: 40px;
+    }
+}
+
+.intro_profession{
+    font-size: 16px;
+}
+
+
+#header{
+    position: absolute;
+    padding: 30px 0;
+    height: 92px;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 1; 
+    align-self: stretch;
+}
+
+.container{
+    
+}
+
+#nav_menu_container{
+    
+}
+
+/* .motto{
+    height: 35%;
+    background-color: rgba(223, 17, 96, 0.842);
+    margin: 0 auto;
+} */
+
+.my_motto{
+color: white;
+padding: 20px 0 20px 0;
+text-transform: uppercase;
+text-align: center;
+font-style: italic;
+}
+
+
+.nav_menu{
+    list-style: none;
+    display: flex;
+    background-color: transparent;
+}
+
+
+.nav_item_link{
+    flex-grow: 1;
+    align-self: stretch;
+    display: block;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    width: max-content;
+    background-color: transparent;
+}
+
+.nav_item_link:hover{
+    color:rgba(223, 17, 96, 0.842);
+    /* border-bottom: 2px solid rgba(223, 17, 96, 0.842); */
+}
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    /* background-color: rgb(231, 230, 230); */
+    padding: 0 60px;
+}
+
+.about_me_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 40px 0;
+}
+
+.about_me_photo {
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.about_me_title {
+   color: rgba(223, 17, 96, 0.842);
+}
+
+.about_me_motto {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 0;
+    color: rgba(223, 17, 96, 0.842);
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    padding: 35px 60px;
+}
+
+.skills_title{
+    color: rgba(223, 17, 96, 0.842);
+    margin-bottom: 40px;
+}
+
+.skills_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    justify-items: center;
+}
+
+.skills_content_img {
+    filter: grayscale(1);
+}
+
+.skills_content_right{
+ 
+    width: 100%;
+}
+
+.skills-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+}
+
+.hobby{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    background-color: white;
+    padding: 0 60px;
+}
+
+.max_width_1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.empty-dot {
+    display: inline-block;
+    border: 1px solid rgba(223, 17, 96, 0.842);
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+}
+
+.filled-dot {
+    display: inline-block;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(223, 17, 96, 0.842);
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    background-color: white;
+    padding: 35px 60px;
+    background-color: rgb(245 245 245);
+}
+
+.experience_title {
+    color: rgba(223, 17, 96, 0.842);
+    margin-bottom: 40px;
+}
+
+.experience_content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.experience_box {
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid rgb(197, 189, 189);
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 3px;
+    box-shadow: rgb(223, 17, 96, 0.842) 0px 1px 3px;
+    margin-bottom: 15px;
+}
+
+.experience_box:hover {
+    transform: scale(1.05);
+    transition: all .4s ease-in-out;
+}
+
+.experience_box-title {
+    font-weight: 700;
+}
+
+.footer {
+    height: 40px;
+    padding: 20px 45px;
+    text-align: center;
+}
