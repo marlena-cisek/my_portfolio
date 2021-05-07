@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marlena-myPortfolio</title>
+    <title>Marlena - Portfolio</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="header">
         <nav id="nav_menu_container">
             <ul class="nav_menu">
 
@@ -35,6 +35,36 @@
                     <a class="nav_item_link" href="#contact">CONTACT</a>
                 </li>
             </ul>
+        
+            <!-- MOBILE MENU -->
+            <ul class="mobile-header-nav">
+                <li class="nav_item">
+                    <a class="nav_item_link" href="#about">ABOUT ME</a>
+                </li>
+
+                <li class="nav_item">
+                    <a class="nav_item_link" href="#experience">WORK EXPERIENCE</a>
+                </li>
+
+                <li class="nav_item">
+                    <a class="nav_item_link" href="#skills">SKILLS</a>
+                </li>
+
+                <li class="nav_item">
+                    <a class="nav_item_link" href="#hobby">HOBBY</a>
+                </li>
+
+                <li class="nav_item">
+                    <a class="nav_item_link" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        
+            <!-- HAMBURGER MENU  -->
+            <a class="mobile-menu-toggle js-toggle-menu hamburger-menu" href="#">
+                <span class="menu-item"></span>
+                <span class="menu-item"></span>
+                <span class="menu-item"></span>
+            </a>
         </nav>
     </header>
 
@@ -44,9 +74,9 @@
             <span class="intro_username">I'm Ann Kowalska</span>
             <span class="intro_profession">Front-end Developer</span>
         </div>
-
-
     </section>
+
+    <!-- ABOUT ME -->
     <section id="about" class="about_me">
         <div class="max_width_1200">
             <div class="about_me_content">
@@ -60,47 +90,51 @@
                         <p>"Nieważne skąd pochodzisz. Ważne dokąd zmierzasz."</p> 
                         <p>Brian Tracy</p>
                     </blockquote>
-                    
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section id="experience" class="experience">
-        <h4 class="title">
-            - Experience -
-        </h4>
-        <p class="experience_text">
-            I have gained my many years of experience working in one of the largest companies in the world. 
-            I like working with people and new technologies. I detest lies and duplicity. 
-            I don't care what you think about me.</p>
-
-        <div class="experience_content">
-            <div class="experience_box">
-                <div class="experience_box-title">Lidl 2021 - current</div>
-                <div class="experience_box_position">Frontend developer</div>
-            </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience ">
+        <div class="max_width_1200">
+            <h4 class="title"> - Experience -</h4>
+            
+            <p class="experience_text">
+                I have gained my many years of experience working in one of the largest companies in the world. 
+                I like working with people and new technologies. I detest lies and duplicity. 
+                I don't care what you think about me.
+            </p>
     
-            <div class="experience_box">
-                <div class="experience_box-title">Netflix 2018-2020</div>
-                <div class="experience_box_position">Senior Software Engineer, Service Networking</div>
-            </div>
-    
-            <div class="experience_box">
-                <div class="experience_box-title">Facebook 2016-2018</div>
-                <div class="experience_box_position">Software Engineer, AI (EMEA)</div>
-            </div>
-    
-            <div class="experience_box">
-                <div class="experience_box-title">SpaceX 2015-2016</div>
-                <div class="experience_box_position">Avionics Systems Engineer (Starship)</div>
+            <div class="experience_content">
+                <div class="experience_box">
+                    <div class="experience_box-title">Lidl 2021 - current</div>
+                    <div class="experience_box_position">Frontend developer</div>
+                </div>
+        
+                <div class="experience_box">
+                    <div class="experience_box-title">Netflix 2018-2020</div>
+                    <div class="experience_box_position">Senior Software Engineer, Service Networking</div>
+                </div>
+        
+                <div class="experience_box">
+                    <div class="experience_box-title">Facebook 2016-2018</div>
+                    <div class="experience_box_position">Software Engineer, AI (EMEA)</div>
+                </div>
+        
+                <div class="experience_box">
+                    <div class="experience_box-title">SpaceX 2015-2016</div>
+                    <div class="experience_box_position">Avionics Systems Engineer (Starship)</div>
+                </div>
             </div>
         </div>
     </section>
     
-    <section class="skills">
-        <div>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="skills">
+        <div class="max_width_1200">
             <div class="skills_content">
                 <img class="skills_content_img" src="jpg/pngkey.com-competition-png-1390627.png" alt="brain">
                 <div class="skills_content_right">
@@ -200,61 +234,65 @@
                 </div>
             </div>
         </div>
-      
     </section>
 
+    <!-- HOBBY  -->
+
     <section id="hobby" class="hobby">
-        <h4 class="title">
+        <div class="max_width_1200">
+            <h4 class="title">
             - Hobby -
-        </h4>
-        <p class="hobby_text">In my spare time, I love to go on long hikes, read a good book and ride my horse Ofalo.</p>
-        
+            </h4>
+            <p class="hobby_text">In my spare time, I love to go on long hikes, read a good book and ride my horse Ofalo.</p>
             <div class="hobby_container">
                 <img class="hobby_image" src="jpg/erik-mclean-Fdh1tz4Ronw-unsplash.jpg" alt="walk">
                 <img class="hobby_image" src="jpg/nadya-shuran--kfLtQDPdfA-unsplash.jpg" alt="book&coffe">
                 <img class="hobby_image" src="jpg/paula-palmieri-s1B0_SB66uM-unsplash (1).jpg" alt="horse">          
-
             </div>
+        </div>
     </section>
 
     <section id="contact" class="contact">
-        <h4 class="title">
-            - Contact me -
-        </h4>
+        <div class="max_width_1200">
+            <h4 class="title">
+                - Contact me -
+            </h4>
 
-        <p class="contact_text">
-            Thanks for visiting! Please do not hesitate to contact me. You can contact me using any of the below methods and I will get back to you as soon as possible.
-        </p>
-        <div class="contact_container">
+            <p class="contact_text">
+                Thanks for visiting! Please do not hesitate to contact me. You can contact me using any of the below methods and I will get back to you as soon as possible.
+            </p>
+            <div class="contact_container">
+            
+                <a class="contact_icon_link" href="mailto:ann_kowalska@gmail.com" target="_blank">
+                    <img class="contact_icon" src="jpg/iconmonstr-gmail-1.svg" alt="gmail">
+                   <span class="contact_icon_description">ann_kowalska@gmail.com</span> 
+                </a>
+
+                <a class="contact_icon_link" href="https://www.linkedin.com" target="_blank">
+                    <img class="contact_icon" src="jpg/iconmonstr-linkedin-3.svg" alt="linkedin">
+                    <span class="contact_icon_description">LinkedIn </span>
+                </a>
+
+                <a class="contact_icon_link" href="https://www.facebook.com" target="_blank">
+                    <img class="contact_icon" src="jpg/iconmonstr-facebook-3.svg" alt="facebook">
+                    <span class="contact_icon_description">Facebook </span>
+                </a>
         
-            <a class="contact_icon_link" href="mailto:ann_kowalska@gmail.com" target="_blank">
-                <img class="contact_icon" src="jpg/iconmonstr-gmail-1.svg" alt="gmail">
-                ann_kowalska@gmail.com
-             </a>
-
-            <a class="contact_icon_link" href="https://www.linkedin.com" target="_blank">
-                <img class="contact_icon" src="jpg/iconmonstr-linkedin-3.svg" alt="linkedin">
-                LinkedIn
-            </a>
-
-            <a class="contact_icon_link" href="https://www.facebook.com" target="_blank">
-                <img class="contact_icon" src="jpg/iconmonstr-facebook-3.svg" alt="facebook">
-                Facebook
-            </a>
-       
-            <a class="contact_icon_link" href="https://www.github.com" target="_blank">
-                <img class="contact_icon" src="jpg/iconmonstr-github-3.svg"  alt="github">
-                GitHub
-            </a>
+                <a class="contact_icon_link" href="https://www.github.com" target="_blank">
+                    <img class="contact_icon" src="jpg/iconmonstr-github-3.svg"  alt="github">
+                     <span class="contact_icon_description" >GitHub</span>
+                </a>
+            </div>
         </div>
     </section>
     
 
     <footer class="footer">© 2021 by Ann Kowalska.</footer>
-<script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+
+  <script src="main.js"></script>
   
 </body>
 </html>
