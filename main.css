@@ -4,6 +4,10 @@ body{
     font-size: 14px;
 }
 
+.title{
+    color: rgba(223, 17, 96, 0.842);
+}
+
 .main {
     background: url(jpg/12913.jpg) no-repeat center bottom;
     background-size: cover;
@@ -137,7 +141,10 @@ font-style: italic;
 .about_me_title {
    color: rgba(223, 17, 96, 0.842);
 }
-
+.about_me_text{
+    font-size: 15px;
+    text-align: justify;
+}
 .about_me_motto {
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
@@ -156,29 +163,34 @@ font-style: italic;
 
 .skills_title{
     color: rgba(223, 17, 96, 0.842);
-    margin-bottom: 40px;
 }
-
+.skills_text{
+    font-size: 15px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
 .skills_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     justify-items: center;
+    align-items: center;
 }
 
 .skills_content_img {
     filter: grayscale(1);
+    max-height: 75%;
 }
 
 .skills_content_right{
- 
     width: 100%;
 }
 
 .skills-two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .hobby{
@@ -187,7 +199,16 @@ font-style: italic;
     justify-content: center;
     min-height: 400px;
     background-color: white;
-    padding: 0 60px;
+    padding: 35px 60px;
+}
+.hobby_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 450px;
+    justify-items: center;
+}
+.hobby_image{
+   height: 100%;;
 }
 
 .max_width_1200 {
@@ -220,12 +241,16 @@ font-style: italic;
     min-height: 400px;
     background-color: white;
     padding: 35px 60px;
-    background-color: rgb(245 245 245);
+    background-color: rgb(245, 245, 245);
 }
 
 .experience_title {
     color: rgba(223, 17, 96, 0.842);
-    margin-bottom: 40px;
+}
+
+.experience_text{
+    font-size: 15px;
+    margin-bottom: 50px;
 }
 
 .experience_content {
@@ -254,8 +279,50 @@ font-style: italic;
     font-weight: 700;
 }
 
+#hobby {
+    background-color: rgb(245, 245, 245);
+}
+
+.contact{
+    padding: 35px 60px;
+    font-size: 15px;
+}
+
+.contact_text{
+text-align: center;
+}
+.contact_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    justify-content: center;
+    padding: 35px 60px;
+    max-width: 630px;
+    margin: 0 auto;
+}
+.contact_icon{
+    color: rgba(223, 17, 96, 0.842);
+}
+
+.contact_icon_link{
+    display: grid;
+    grid-template-rows: max-content max-content;
+    row-gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: none;
+    color: black;
+    color: rgba(223, 17, 96, 0.842);
+}
+
 .footer {
+    display: flex;
     height: 40px;
     padding: 20px 45px;
     text-align: center;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
+
